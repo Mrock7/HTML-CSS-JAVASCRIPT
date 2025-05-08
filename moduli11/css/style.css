@@ -1,0 +1,33 @@
+h2 {
+    font-size: 50px;
+    color: red;
+
+}
+
+h1{
+
+    margin: 100px;
+}
+
+/* div {
+    height: 500;
+    width: 200;
+    color: navy;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    border: 15px solid green;
+    padding: 500px;
+    margin: 500px;
+} */
+
+p {
+
+    color: #000123
+
+   }

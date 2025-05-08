@@ -1,0 +1,27 @@
+h1 {
+    color:aqua;
+    letter-spacing: 20px;
+    word-spacing: 40x;
+
+}
+
+p {
+   text-align:center;
+   text-indent: 20px;
+   font-family: VT323, serif;
+}
+
+h2 {
+
+    text-decoration: dotted;
+}
+
+h3 {
+
+    text-decoration: underline;
+}
+
+h4 {
+
+    text-decoration: overline;
+}
