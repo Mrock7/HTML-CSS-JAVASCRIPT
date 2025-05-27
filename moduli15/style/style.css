@@ -1,83 +1,158 @@
-div#static {
-
-    position: static;
-    border: 3px solid green;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
+/* body {
+  margin: 0;
 }
 
-div#relative {
-
-    position: relative;
-    border: 3px solid green;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
-
-    left: 300px;
-}
-
-div#fixed {
-
-    position: fixed;
-    border: 3px solid green;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
-
-    right: 300px;
-    left: 300px;
-}
-
-div#parent {
-
-    position: relative;
-    border: 3px solid rgb(128, 0, 0);
-    width: 250px;
-    height: 250px;
-}
-
-div#absolute {
-
-    position: absolute;
-    border: 3px solid rgb(128, 0, 0);
-    width: 100px;
-    height: 100px;
-}
-
-ul {
-
-    list-style-type: none;
-    margin: 0 ;
-    overflow: hidden;
-    background-color: aqua;
-
+* {
+  box-sizing: border-box;
 }
 
 
-li { 
-    float: left;
+
+#horizontal-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-
-li a {
-
-
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px;
+#horizontal-menu li {
+  float: left;
 }
 
-li a:hover:not(.active){
+#horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-    background-color: white;
-    color:black
+#horizontal-menu li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
+  background-color: #4CAF50;
+} */
 
-    background-color: green;
+/*Mega Menu*/
+
+
+.navbar {
+
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.navbar a {
+
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: green;
+  margin: 0;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+  background-color: aquamarine;
+}
+
+.dropdown-content{
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: none;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #333;
+  height: 250px;
+
+}
+
+.column a {
+
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+
+.column a:hover {
+
+    background-color: red;
+}
+
+.row:after{
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#vertical-menu {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 25px;
+    background-color: blue;
+    position: fixed;
+    height: 100px;
+    overflow: auto;
+}
+
+#vertical-menu li a {
+
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#vertical-menu li a.active {
+    background-color: black;
+    color:blanchedalmond;
+
+}
+
+#vertical-menu li a a:hover:not(.active) {
+     background-color: yellow;
+     color: pink;
 }
